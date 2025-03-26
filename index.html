@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/css/bootstrap.min.css">
+    <title>ADR - Transport opasnih materija - Identifikacioni brojevi opasnosti i njihova značenja</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="adr_script.js"></script> -->
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form class="form-horizontal">
+            <div class="form-group form-group-lg">
+                <label for="ibo" class="col-sm-3 control-label">Identifikacioni broj
+                    opasnosti</label>
+                <div class="col-sm-9">
+                    <select class="form-control" id="ibo">
+                        <option selected disabled>Izaberite identifikacioni broj opasnosti</option>
+                        <option value="1">20</option>
+                        <option value="2">22</option>
+                        <option value="3">223</option>
+                        <option value="4">225</option>
+                        <option value="5">23</option>
+                        <option value="6">239</option>
+                        <option value="7">25</option>
+                        <option value="8">26</option>
+                        <option value="9">263</option>
+                        <option value="10">265</option>
+                        <option value="11">268</option>
+                        <option value="12">30</option>
+                        <option value="13">323</option>
+                        <option value="14">x323</option>
+                        <option value="15">33</option>
+                        <option value="16">333</option>
+                        <option value="17">x333</option>
+                        <option value="18">336</option>
+                        <option value="19">338</option>
+                        <option value="20">x338</option>
+                        <option value="21">339</option>
+                        <option value="22">36</option>
+                        <option value="23">362</option>
+                        <option value="24">x362</option>
+                        <option value="25">368</option>
+                        <option value="26">38</option>
+                        <option value="27">382</option>
+                        <option value="28">x382</option>
+                        <option value="29">39</option>
+                        <option value="30">40</option>
+                        <option value="31">423</option>
+                        <option value="32">x423</option>
+                        <option value="33">43</option>
+                        <option value="34">44</option>
+                        <option value="35">446</option>
+                        <option value="36">46</option>
+                        <option value="37">462</option>
+                        <option value="38">x462</option>
+                        <option value="39">48</option>
+                        <option value="40">482</option>
+                        <option value="41">x482</option>
+                        <option value="42">50</option>
+                        <option value="43">539</option>
+                        <option value="44">55</option>
+                        <option value="45">556</option>
+                        <option value="46">558</option>
+                        <option value="47">559</option>
+                        <option value="48">56</option>
+                        <option value="49">568</option>
+                        <option value="50">58</option>
+                        <option value="51">59</option>
+                        <option value="52">60</option>
+                        <option value="53">606</option>
+                        <option value="54">623</option>
+                        <option value="55">63</option>
+                        <option value="56">638</option>
+                        <option value="57">639</option>
+                        <option value="58">839</option>
+                        <option value="59">x839</option>
+                        <option value="60">84</option>
+                        <option value="61">842</option>
+                        <option value="62">85</option>
+                        <option value="63">856</option>
+                        <option value="64">86</option>
+                        <option value="65">88</option>
+                        <option value="66">x88</option>
+                        <option value="67">883</option>
+                        <option value="68">884</option>
+                        <option value="69">885</option>
+                        <option value="70">886</option>
+                        <option value="71">x886</option>
+                        <option value="72">89</option>
+                        <option value="73">90</option>
+                        <option value="74">99</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <h4 class="pt-3">Značenje</h4>
+        <p id="text" class="pt-1"></p>
+        <p class="pt-4 help-block">* Voda se smije koristiti samo uz odobrenje stručnjaka.<br>Neke opasne materije burno
+            reaguju u kontaktu sa vodom (od ispuštanja otrovnih gasova do samozapaljenja), zato je potrebno pažljivo
+            rukovanje sa vodom.</p>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $.getScript("adr_script.js");
+    });
+</script>
+
+</html>
